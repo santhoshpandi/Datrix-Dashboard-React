@@ -1,0 +1,53 @@
+
+.pointer >li{
+  @apply cursor-pointer rounded-sm bg-white mt-1 text-black
+   hover:bg-green-600 hover:text-white hover:duration-150
+   dark:bg-slate-800 dark:text-white dark:border-none
+   dark:hover:bg-slate-600
+}
+
+
+.menu{
+  @apply dark:bg-slate-800 dark:text-white 
+}
+
+.menu >li{
+  @apply hover:text-green-900  duration-150 cursor-pointer
+  dark:hover:text-white dark:border-slate-500
+  dark:hover:bg-slate-600
+}
+
+.side-bar{
+  @apply absolute bg-slate-50 right-0 bottom-0 top-0 z-10
+  md:static dark:bg-slate-800
+}
+
+.right-menu{
+  @apply md:flex-row flex-col duration-150 md:static
+  absolute  right-0 left-0 z-[-25] top-[40px]
+  shadow-lg md:shadow-none
+}
+
+.right-menu> li{
+  @apply hover:bg-green-600 hover:text-white duration-150 cursor-pointer
+   py-2 dark:text-white
+}
+
+.container >section>*{
+  @apply dark:text-white
+}
+
+.container >section>ul>li{
+  @apply dark:text-slate-300
+}
+
+.plan >p{
+  @apply dark:text-slate-200
+}
+
+.plan >div{
+  @apply hover:scale-[102%] duration-150 cursor-pointer
+  hover:shadow-green-600
+}
+
+

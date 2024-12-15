@@ -4,7 +4,7 @@ export default function Error404(){
   return(
     <>
     <div className="flex w-[100%] items-center justify-center min-h-screen text-green-600 bg-slate-50 dark:bg-green-600 dark:text-white flex-col gap-5">
-    <img src={imgUrl} alt="Error Loading" className='h-[50vh] mix-blend-darken' />
+    <img src={imgUrl} alt="Error Loading" className='h-[50vh] mix-blend-darken dark:mix-blend-normal dark:rounded-md' />
       <div className="text-center ">
       
         <h1 className="text-6xl font-bold">404</h1>

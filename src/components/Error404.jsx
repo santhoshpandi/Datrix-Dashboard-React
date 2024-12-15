@@ -11,7 +11,7 @@ export default function Error404(){
         <p className="text-2xl mt-4">Oops! The page you're looking for doesn't exist.</p>
         <p className="mt-2">Please check the URL or return to the homepage.</p>
         <br />
-        <a href="/" className='flex items-center justify-center underline hover:text-blue-600 duration-150 text-[18px]'>HomePage<TbHandClick /></a>
+        <a href="/Datrix-Dashboard-React/" className='flex items-center justify-center underline hover:text-blue-600 duration-150 text-[18px]'>HomePage<TbHandClick /></a>
       </div>
     </div>
     </>

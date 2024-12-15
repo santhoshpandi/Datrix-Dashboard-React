@@ -4,7 +4,7 @@ This is a modern, responsive dashboard template built using **React**, **Tailwin
 
 ## Developed by
 
-- **Santhosh Pandi**
+- **Santhosh Pandi** -- **Live Preview** https://santhoshpandi.github.io/Datrix-Dashboard-React/
 
 ## Screenshots
 ![image](https://github.com/user-attachments/assets/134a5624-6485-4c9f-ba68-e66e52e3e1b3)

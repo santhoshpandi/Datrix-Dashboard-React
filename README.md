@@ -57,7 +57,7 @@ Make sure you have the following installed on your system:
 
 1. Clone the repository:
    ```bash
-   https://github.com/santhoshpandi/Datrix-Dashboard-React.git
+   git clone https://github.com/santhoshpandi/Datrix-Dashboard-React.git
 
 2. Navigate to the project directory:
    ```bash

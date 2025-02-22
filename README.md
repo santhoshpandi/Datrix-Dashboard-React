@@ -1,10 +1,10 @@
 # React Dashboard Template
 
-This is a modern, responsive dashboard template built using **React**, **Context API**, **Tailwind CSS**, and **Vite**. The dashboard includes a sliding navigation bar with different sections, a dark mode toggle, responsive design, and several chart components. It is designed to be a starting point for building customizable admin dashboards and other web applications.
+This is a modern, responsive dashboard template built using `React`, `Context API`, `Tailwind CSS`, and `Vite`. The dashboard includes a sliding navigation bar with different sections, a dark mode toggle, responsive design, and several chart components. It is designed to be a starting point for building customizable admin dashboards and other web applications.
 
 ## Developed by
 
-- **Santhosh Pandi** -- **Live Preview** https://santhoshpandi.github.io/Datrix-Dashboard-React/
+- `Santhosh Pandi` -- **Live Preview** https://santhoshpandi.github.io/Datrix-Dashboard-React/
 
 ## Screenshots
 ![image](https://github.com/user-attachments/assets/134a5624-6485-4c9f-ba68-e66e52e3e1b3)
@@ -26,7 +26,7 @@ This is a modern, responsive dashboard template built using **React**, **Context
   - **Layout** (Computer, Tablet, Mobile, etc.)
   - **Plans** (Basic, Advanced, Pro, etc.)
 
-- **State Management**: <b>Context API</b> is used for State Management like (theme, slidingMenu, slidingNavBar etc.).
+- **State Management**: <b>Context API</b> is used for State Management like (theme, slidingMenu, slidingNavBar etc.). Here we have created a state `useSlide`
 
 - **Routing**: Each navigation item routes to its corresponding component for dynamic content display.
 

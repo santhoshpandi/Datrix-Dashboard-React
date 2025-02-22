@@ -1,19 +1,20 @@
-import { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsThreeDots } from "react-icons/bs";
 import ThemeBtn from "./ThemeBtn";
 import logoUrl from '../assets/logo.png'
+import { useSlide } from "../contexts/SlideContext";
 
-export default function Header({obj}){
-  const [menu,setMenu] = useState(false)
+export default function Header({}){
+  
+  const {slide, setSlide, menu, setMenu} = useSlide()
   return(
     <>
     
     {
       /* Overlay for sideBar */
-      obj.slide&&
+      slide&&
       <div 
-      onClick={()=>obj.setSlide(s=>!s)}
+      onClick={()=>setSlide(s=>!s)}
       className="inset-0 z-[9]  opacity-[50%] visible md:hidden fixed bg-black">
       </div>
     }
@@ -22,7 +23,7 @@ export default function Header({obj}){
 
 
       <button 
-      onClick={()=>obj.setSlide(s => !s)}
+      onClick={()=>setSlide(s => !s)}
       className="px-2 py-1 active:text-green-600 rounded-md dark:text-white">
         <GiHamburgerMenu />
       </button>
@@ -39,9 +40,7 @@ export default function Header({obj}){
 
       <BsThreeDots
          onClick={()=> setMenu(!menu)}
-         className="dark:text-white cursor-pointer md:hidden visible" />
-
-      
+         className="dark:text-white cursor-pointer md:hidden visible" />      
 
       <ul 
       className={`select-none

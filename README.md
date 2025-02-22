@@ -1,6 +1,6 @@
 # React Dashboard Template
 
-This is a modern, responsive dashboard template built using **React**, **Tailwind CSS**, and **Vite**. The dashboard includes a sliding navigation bar with different sections, a dark mode toggle, responsive design, and several chart components. It is designed to be a starting point for building customizable admin dashboards and other web applications.
+This is a modern, responsive dashboard template built using **React**, **Context API**, **Tailwind CSS**, and **Vite**. The dashboard includes a sliding navigation bar with different sections, a dark mode toggle, responsive design, and several chart components. It is designed to be a starting point for building customizable admin dashboards and other web applications.
 
 ## Developed by
 
@@ -25,6 +25,8 @@ This is a modern, responsive dashboard template built using **React**, **Tailwin
   - **Trends**
   - **Layout** (Computer, Tablet, Mobile, etc.)
   - **Plans** (Basic, Advanced, Pro, etc.)
+
+- **State Management**: <b>Context API</b> is used for State Management like (theme, slidingMenu, slidingNavBar etc.).
 
 - **Routing**: Each navigation item routes to its corresponding component for dynamic content display.
 
@@ -52,24 +54,29 @@ Make sure you have the following installed on your system:
 
 - **Node.js**: Version 14 or higher
 - **npm**: Version 6 or higher
+- **Git**: Version 6 or higher
 
 ### Installation
 
 1. Clone the repository:
    ```bash
-   https://github.com/santhoshpandi/Datrix-Dashboard-React.git
+   git clone https://github.com/santhoshpandi/Datrix-Dashboard-React.git
+   ```
 
 2. Navigate to the project directory:
    ```bash
    cd Datrix-Dashboard-React
+   ```
 
 3. Install the dependencies:
    ```bash
    npm install
+   ```
 
 4. Start the Development server:
    ```bash
    npm run dev
+   ```
 
 The dashboard will be available at http://localhost:5173
 
@@ -77,13 +84,14 @@ The dashboard will be available at http://localhost:5173
 
   
     /public
-    ├── index.html               # Main HTML file
+    ├── index.html                 # Main HTML file
     /src
       ├── assets                   # Images, icons, etc.
       ├── components/              # Reusable UI components like Navbar, Sidebar, etc.
+      ├── contexts/                # Context API for State Management
       ├── views/                   # Different pages like Home, Trends, Layout, etc.
-      ├── App.js                   # Main React app component
-      ├── index.js                 # Entry point for React
+      ├── App.jsx                  # Main React app component
+      ├── main.jsx                 # Entry point for React
       ├── nav.js                   # Consist of Data about the NavItem and its path
       ├── routes.js                # Consist of Routes of Components
       ├── index.css                # Tailwind configuration and custom styles
@@ -114,6 +122,7 @@ You can easily customize the look and feel of the dashboard by:
 - **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 - **Vite**: An extremely fast build tool for modern web projects.
 - **React**: A JavaScript library for building user interfaces.
+- **Context API**: A Built-in method in react used for State Management.
 - **Chart.js**: For displaying interactive charts.
 
   

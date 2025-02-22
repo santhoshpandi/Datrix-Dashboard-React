@@ -5,40 +5,39 @@ import { Link } from "react-router-dom";
 export default function (props) {
 
   const items = props.items
-  const [slideMenu,setSlideMenu] = useState({})
+  const [slideMenu, setSlideMenu] = useState({})
 
-  
-  function toggleMenu(index){
+  function toggleMenu(index) {
     setSlideMenu((prevState) => ({
       ...!prevState, //remaining set to false
-      [index]: !prevState[index], 
+      [index]: !prevState[index],
     }));
   }
 
-  function navGroup(item,index) {
-    return(
+  function navGroup(item, index) {
+    return (
       <li key={index} className="border-y">
-        <button 
-        onClick={() => toggleMenu(index)}
-        className="w-[100%] text-left">
+        <button
+          onClick={() => toggleMenu(index)}
+          className="w-[100%] text-left">
 
-        <Link 
-          className="w-full  px-4 py-2 flex justify-between items-center"
-          to={item.path}>{item.name} <IoIosArrowDropdown />
-        </Link>
+          <Link
+            className="w-full  px-4 py-2 flex justify-between items-center"
+            to={item.path}>{item.name} <IoIosArrowDropdown />
+          </Link>
 
-      </button>
-      <ul 
-      className={`duration-300  pointer overflow-y-scroll no-scrollbar px-2
+        </button>
+        <ul
+          className={`duration-300  pointer overflow-y-scroll no-scrollbar px-2
                   ${slideMenu[index] ? 'max-h-[100vh] ' : 'max-h-0'}`} >
 
-        { 
-        item.items.map((item,index)=>{
-          return navItem(item,index)
-        }) 
-        }
+          {
+            item.items.map((item, index) => {
+              return navItem(item, index)
+            })
+          }
 
-      </ul>
+        </ul>
       </li>
     )
   }
@@ -48,7 +47,7 @@ export default function (props) {
       <li key={index} className="border-y">
 
         {/* while creating the menu, it also links the path of the router by using Link tag... the path is given to nav.js */}
-          <Link
+        <Link
           className="w-full px-4 py-2 block duration-150"
           to={item.path}>{item.name}</Link>
       </li>
@@ -59,11 +58,11 @@ export default function (props) {
   return (
 
 
-    <ul  className="flex flex-col menu overflow-y-scroll no-scrollbar">
+    <ul className="flex flex-col menu overflow-y-scroll no-scrollbar">
 
       {
         //Study the nav.js for better understanding💖
-        items&&
+        items &&
         items.map((item, index) => {
 
           //If the menu has subdivisions Eg. (Layout -> tablet,mobile)
